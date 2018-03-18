@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* SLIDER ==============================*/
+
+.flexslider{
+	width:100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	
+	
+}
+
+.slides,
+.slides li,
+.slides li img{
+	width: 100%;
+	
+}
+
+/* RESPONSIVE ========== */
+
+@media screen and (max-width: 770px){
+
+}
+
+@media screen and (max-width: 600px){
+	.flexslider{
+		width: 100%;
+	}
+
+	.slides li{
+		overflow: hidden;
+	}
+
+	.slides li img{
+		width: 600px;
+	}
+
+}
+
+@media screen and (max-width: 450px){
+	.slides li img{
+		transform: translateX(-90px);
+	}
+
+}

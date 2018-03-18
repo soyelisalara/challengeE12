@@ -1,0 +1,282 @@
+/* -- REGULAR -- */
+@font-face {  
+	font-family: 'Scout';
+	font-weight: 400;
+	src:url("../fonts/Scout-Regular.otf") format('opentype');
+}
+/* -- COND - REGULAR -- */
+@font-face {
+	font-family: 'Scout';
+	font-weight: 500;
+	src:url("../fonts/ScoutCond-Regular.otf")format('opentype');
+}
+/* -- BOLD -- */
+@font-face {
+	font-family: 'Scout';
+	font-weight: 700;
+	src:url("../fonts/Scout-Bold.otf")format('opentype');
+}
+/* -- EXTRA - LIGHT -- */
+@font-face {
+	font-family: 'Scout';
+	font-weight: 200;
+	src:url("../fonts/Scout-ExtraLight.otf.otf")format('opentype');
+}
+/* -- LIGHT -- */
+@font-face {
+	font-family: 'Scout';
+	font-weight: 300;
+	src:url("../fonts/Scout-Light.otf")format('opentype');
+}
+/* -- THIN -- */
+@font-face {
+	font-family: 'Scout';
+	font-weight: 100;
+	src:url("../fonts/Scout-Thin.otf")format('opentype');
+}
+
+/* -------------> GENERAL <-------------*/ 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family:'Scout';
+}
+
+.flex-container{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+/* -------------> TOP PART <-------------*/
+header{
+	background-color: #262626;
+	padding: 10px;
+	height: 40px;
+	color: 	#FFFFFF;
+}
+
+header img{
+	height: 20px;
+	padding-left: 10px;
+}
+header a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+#left-client{
+	padding: 5px;
+	float: left;
+	margin-left: 50px;
+}
+
+#left-client h4{
+	font-family: 'Scout';
+	font-weight: 200;
+	font-size: 15px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#right-client{
+	float: right;
+	margin-right: 50px;
+}
+
+#right-client h3 {
+	font-family: 'Scout';
+	font-weight: 100;
+	font-size: 17px;
+}
+
+#vertical-line{
+	border-left: thin solid #FFFFFF;
+}
+
+/* -------------> MENU <-------------*/
+
+#estudio h1{
+	font-family: 'Scout';
+	font-weight: 700;
+	font-size: 40px;
+	color: #262626;
+
+}
+
+#menu, #estudio{
+	padding:5px;
+
+}
+
+#menu a{
+	text-decoration: none;
+	color:#262626;
+	text-align: center;
+	font-weight: 500;
+	font-size: 25px;
+	padding-right: 20px;
+}
+
+#menu a:hover{
+	opacity: 0.7;
+}
+/* -------------> FIN MENU <-------------*/
+
+/* -------------> FREE SHIPPING <-------------*/
+#shipment{
+	background-color: #21386B;
+	height: 40px;
+	padding: 10px;
+}
+
+#shipment h5{
+	color: 	#FFFFFF;
+	font-family: 'Scout';
+	font-weight: 400;
+	padding-right: 10px;
+	padding-top: 1px;
+	font-size: 16px;
+}
+
+#shipment a{
+	font-size: 16px;
+	text-decoration: none;
+	color: 	#FFFFFF;
+	font-family: 'Scout';
+	font-weight: 200;
+}
+
+#shipment a:active {
+	opacity: 0.5;
+}
+
+#shipment a:link {
+	color:	#FFFFFF;
+}
+/* -------------> FIN - FREE SHIPPING <-------------*/
+
+/* -------------> DESTACADOS <-------------*/
+.destacados{
+	justify-content: center;
+	display: flex;
+	padding: 40px;
+}
+
+.destacados h1{
+	font-size: 50px;
+	color:#262626;
+	font-family: 'Scout';
+	font-stretch: condensed;
+	padding: 20px;
+}
+article.product{
+	height: 261px: 
+}
+.product img{
+	height: 250px;
+}
+
+.destacados img{
+
+}
+
+.information p {
+	color: red;
+}
+
+/* -------------> SOCIAL NETWORK ICONS <-------------*/
+#socialNetwork{
+	display: flex;
+	justify-content: center;
+	background-color: #262626;
+	height: 100px;
+	margin-bottom: 50px;
+}
+
+#socialNetwork a:hover img:hover {
+		opacity: 0.3;
+
+}
+
+#socialNetwork img{
+	padding: 30px; 
+}
+
+/* -------------> FIN SOCIAL NETWORK ITEMS <-------------*/
+
+@media screen and (min-width: 780px) and (max-width: 1024px){
+
+}
+@media screen and (min-width: 320px) and (max-width: 780px){
+
+/* HEADER */
+	header{
+		display: none;
+	}
+
+	#menu a{
+		text-decoration: none;
+		color:#262626;
+		text-align: center;
+		font-weight: 500;
+		font-size: 24px;
+		padding-right: 12px;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+/* HEADER */
+	header{
+		display: none;
+	}
+
+/* FREE SHIPPING */
+	#shipment{
+		height: 35px;
+	}
+
+	#shipment h5{
+		font-size: 11px;
+		color: 	#FFFFFF;
+		font-family: 'Scout';
+		font-weight: 400;
+		padding-right: 10px;
+	}
+
+	#shipment a{
+	font-size: 11px;
+	text-decoration: none;
+	color: 	#FFFFFF;
+	font-family: 'Scout';
+	font-weight: 200;
+	}
+
+/* MENU */ 
+
+	#menu a{
+		text-decoration: none;
+		color:#262626;
+		text-align: center;
+		font-weight: 500;
+		font-size: 16px;
+		padding-right: 12px;
+	}
+
+/* SOCIAL NETWORK */
+
+	#socialNetwork{
+		display: flex;
+		justify-content: center;
+		background-color: #262626;
+		height: 80px;
+		margin-bottom: 50px;
+	}
+	#socialNetwork img{
+	padding:20px;
+	}
+

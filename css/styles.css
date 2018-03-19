@@ -173,20 +173,72 @@ header a{
 	font-stretch: condensed;
 	padding: 20px;
 }
-article.product{
-	height: 261px: 
+
+.product{
+	text-align: center;
+	font-family: 'Scout';
+	font-weight: 200;
+	color: #262626;
 }
-.product img{
-	height: 250px;
+.post{
+	padding-top: 50px;
+}
+/* -------------> FIN - DESTACADOS <-------------*/
+
+/* -------------> VARIOS <-------------*/
+#varios{
+	margin-top:100px;
 }
 
-.destacados img{
-
+.text-center {
+	font-family: 'Scout';
+	text-align: center;
+	color: #262626;
+}
+.text-center h3{
+	font-size: 50px;
+	
+	font-weight: 500;
+}
+.text-center p{
+	font-size: 20px;
+	
+	font-weight: 200;
 }
 
-.information p {
-	color: red;
+#people img{
+	padding: 20px;
+	opacity: 0.7;
 }
+#people img:hover{
+	opacity: 1;
+}
+#info{
+	width: 80%;
+	display: flex;
+	margin-left: 100px;
+}
+#info h5,p{
+	color: #262626;
+	justify-content: center;
+	
+	text-align: center;
+	font-family: 'Scout';
+	font-weight:400;
+
+}
+#info h5{
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: 'Scout';
+	font-weight:500;
+	text-transform: uppercase;
+}
+#info p{
+	font-family: 'Scout';
+	font-weight:300;
+}
+
 
 /* -------------> SOCIAL NETWORK ICONS <-------------*/
 #socialNetwork{
@@ -195,6 +247,7 @@ article.product{
 	background-color: #262626;
 	height: 100px;
 	margin-bottom: 50px;
+	margin-top:30px;
 }
 
 #socialNetwork a:hover img:hover {
@@ -228,6 +281,14 @@ article.product{
 	}
 }
 
+
+.destacados h1{
+	font-size: 30px;
+	color:#262626;
+	font-family: 'Scout';
+	font-stretch: condensed;
+	padding: 20px;
+}
 @media screen and (max-width: 480px){
 
 /* HEADER */
@@ -265,6 +326,18 @@ article.product{
 		font-weight: 500;
 		font-size: 16px;
 		padding-right: 12px;
+	}
+
+/* DESTACADOS */ 
+	.destacados h1{
+		display: none;
+	}
+
+	.destacados img{
+		transform: scale(0.7); 
+	}
+	.post{
+		display: none;
 	}
 
 /* SOCIAL NETWORK */

@@ -93,6 +93,13 @@ header a{
 	font-size: 17px;
 }
 
+#right-client p {
+	font-family: 'Scout';
+	font-weight: 100;
+	font-size: 10px;
+	color: white;
+}
+
 #vertical-line{
 	border-left: thin solid #FFFFFF;
 }
@@ -186,10 +193,27 @@ header a{
 /* -------------> FIN - DESTACADOS <-------------*/
 
 /* -------------> VARIOS <-------------*/
+
 #varios{
-	margin-top:100px;
+	width: 900px;
+	margin-top: 60px;
+	margin-left: 100px;
+}
+.large{
+	width: 66.66%;
 }
 
+.small{
+	width: 33.33%
+}
+
+
+
+
+
+
+
+/* -------------> VARIOS <-------------*/
 .text-center {
 	font-family: 'Scout';
 	text-align: center;
@@ -213,12 +237,14 @@ header a{
 #people img:hover{
 	opacity: 1;
 }
+
+/* -------------> TEXTO INFORMACION <-------------*/
 #info{
 	width: 80%;
 	display: flex;
 	margin-left: 100px;
 }
-#info h5,p{
+#info h5, p{
 	color: #262626;
 	justify-content: center;
 	
@@ -238,7 +264,7 @@ header a{
 	font-family: 'Scout';
 	font-weight:300;
 }
-
+/* -------------> FIN - TEXTO INFORMACION <-------------*/
 
 /* -------------> SOCIAL NETWORK ICONS <-------------*/
 #socialNetwork{
@@ -258,15 +284,49 @@ header a{
 #socialNetwork img{
 	padding: 30px; 
 }
+footer{
+	margin-bottom: 100px;
+}
 
 /* -------------> FIN SOCIAL NETWORK ITEMS <-------------*/
+
+/* -------------> ATENCION CLIENTE <-------------*/
+.services ul {
+	display: inline-block;
+	font-weight: 300;
+	font-size: 20px;
+	margin: 30px;
+
+}
+
+ul .title {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 20px;	
+	letter-spacing: 1px;
+}
+#list li{
+ 	color: #262626;
+	list-style: none;
+	padding-bottom: 10px;
+	font-family: 'Scout';
+	font-weight: 200;
+	padding-right: 60px;
+
+}
+
+/* -------------> ATENCION CLIENTE <-------------*/
+
+
+
+
 
 @media screen and (min-width: 780px) and (max-width: 1024px){
 
 }
 @media screen and (min-width: 320px) and (max-width: 780px){
 
-/* HEADER */
+/* HEADER - MEDIA */
 	header{
 		display: none;
 	}
@@ -289,14 +349,15 @@ header a{
 	font-stretch: condensed;
 	padding: 20px;
 }
+
 @media screen and (max-width: 480px){
 
-/* HEADER */
+/* HEADER - MEDIA */
 	header{
 		display: none;
 	}
 
-/* FREE SHIPPING */
+/* FREE SHIPPING - MEDIA */
 	#shipment{
 		height: 35px;
 	}
@@ -317,7 +378,7 @@ header a{
 	font-weight: 200;
 	}
 
-/* MENU */ 
+/* MENU - MEDIA */ 
 
 	#menu a{
 		text-decoration: none;
@@ -328,7 +389,7 @@ header a{
 		padding-right: 12px;
 	}
 
-/* DESTACADOS */ 
+/* DESTACADOS - MEDIA */ 
 	.destacados h1{
 		display: none;
 	}
@@ -340,7 +401,7 @@ header a{
 		display: none;
 	}
 
-/* SOCIAL NETWORK */
+/* SOCIAL NETWORK - MEDIA */
 
 	#socialNetwork{
 		display: flex;
